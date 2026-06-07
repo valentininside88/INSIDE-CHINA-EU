@@ -6,9 +6,16 @@
 <meta name="color-scheme" content="dark">
 <title>Light Solutions — China to Europe Freight. Sea, Rail, Air, Road.</title>
 <meta name="description" content="Sea, air, rail and road freight from China to any EU destination. Full EU customs clearance, LCL consolidation hub in Riga. Own teams in Hangzhou, Sanya, Hong Kong. SIA Light Solutions, Latvia.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Light Solutions — China to Europe Freight">
+<meta property="og:description" content="Sea, rail, air and road from China to any EU destination, customs cleared. Teams on the ground in China, LCL consolidation hub in Riga.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#100b06">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230c0905'/><g fill='none' stroke='%23dca44e' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'><path d='M30 24V60Q30 70 40 70H56'/><path d='M70 40C70 32 63 29 56 31 49 33 46 40 52 47 58 54 74 51 74 62 74 71 65 73 57 71 51 70 47 67 46 63'/></g></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=' js'</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--s0:#0c0905;--s1:#100b06;--s2:#171009;--s3:#1e150c;--s4:#271c11;--s5:#342615;--b0:#3a2410;--b1:#6b4a22;--b2:#9a6c30;--b3:#c2913f;--b4:#dca44e;--b5:#f0d493;--t1:#f4ead2;--t2:#c9b48c;--t3:#8a755a;--d1:rgba(224,184,112,.14);--d2:rgba(224,184,112,.26);--nav-bg:rgba(12,9,5,.92);--mob-bg:rgba(8,6,3,.98)}
@@ -34,7 +41,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(220,164,78,.28);opacity:.92}
 .btn-ghost{display:inline-block;text-decoration:none;background:transparent;color:var(--t1);padding:.95rem 2.4rem;font-weight:600;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--d2);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));transition:all .2s}
 .btn-ghost:hover{border-color:var(--b4);background:rgba(220,164,78,.08)}
-section{padding:7rem 4rem}
+section{padding:7rem 4rem;scroll-margin-top:84px}
 .sec-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--b2) 30%,var(--b4) 50%,var(--b2) 70%,transparent)}
 h2.disp{font-size:clamp(2.4rem,4.5vw,4rem)}
 #hero{min-height:100vh;background:var(--s1);display:grid;grid-template-columns:55% 45%;position:relative;overflow:hidden}
@@ -154,10 +161,11 @@ footer{background:var(--s0);border-top:3px solid var(--b2);padding:2rem 4rem;dis
 .f-reg{font-size:.72rem;color:var(--t2);margin-top:.2rem}
 .f-nav{display:flex;gap:1.6rem;flex-wrap:wrap}
 .f-nav a{font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);text-decoration:none}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s,transform .65s}.reveal.visible{opacity:1;transform:none}
-.reveal-l{opacity:0;transform:translateX(-28px);transition:opacity .65s,transform .65s}.reveal-l.visible{opacity:1;transform:none}
-.reveal-r{opacity:0;transform:translateX(28px);transition:opacity .65s,transform .65s}.reveal-r.visible{opacity:1;transform:none}
-.reveal-scale{opacity:0;transform:scale(.94);transition:opacity .65s,transform .65s}.reveal-scale.visible{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .65s,transform .65s}.reveal.visible{opacity:1;transform:none}
+.js .reveal-l{opacity:0;transform:translateX(-28px);transition:opacity .65s,transform .65s}.reveal-l.visible{opacity:1;transform:none}
+.js .reveal-r{opacity:0;transform:translateX(28px);transition:opacity .65s,transform .65s}.reveal-r.visible{opacity:1;transform:none}
+.js .reveal-scale{opacity:0;transform:scale(.94);transition:opacity .65s,transform .65s}.reveal-scale.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}.reveal,.reveal-l,.reveal-r,.reveal-scale{opacity:1;transform:none}}
 @media(max-width:1100px){#hero{grid-template-columns:1fr}.hero-r{display:none}#routes,#contact{grid-template-columns:1fr;gap:3rem}.modes-grid{grid-template-columns:repeat(2,1fr)}.mc:nth-child(2){border-right:none}.mc:nth-child(3),.mc:nth-child(4){border-top:1px solid var(--d1)}.mc:nth-child(4){border-right:none}.why-grid,.team-grid,.svc-grid{grid-template-columns:repeat(2,1fr)}.certs-grid{grid-template-columns:1fr;max-width:360px;margin:auto}}
 @media(max-width:768px){nav{padding:1.1rem 1.4rem}section{padding:4.5rem 1.4rem}.hero-l{padding:5.5rem 1.4rem 3rem}#hero{min-height:auto}.nav-links,.nav-cta{display:none}.burger{display:flex}.modes-grid,.svc-grid,.why-grid,.team-grid{grid-template-columns:1fr}.mc{border-right:none!important;border-top:1px solid var(--d1)}.mc:first-child{border-top:none}.form-row{grid-template-columns:1fr}footer{flex-direction:column;text-align:center;align-items:center}.f-nav{justify-content:center}.hero-stats{grid-template-columns:repeat(2,1fr);gap:0}.modes-head{flex-direction:column}.rth,.rtr{grid-template-columns:1fr 80px}.rtr-m{display:none}}
 .nav-open .nav-links{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;bottom:0;background:var(--mob-bg);align-items:center;justify-content:center;gap:2.5rem;z-index:150}
@@ -167,7 +175,7 @@ footer{background:var(--s0);border-top:3px solid var(--b2);padding:2rem 4rem;dis
 </head>
 <body>
 <a href="https://wa.me/37129957507" target="_blank" rel="noopener" aria-label="WhatsApp" style="position:fixed;right:20px;bottom:20px;z-index:300;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#0c0905,#1e150c);border:1px solid var(--d2);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(0,0,0,.5)">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="url(#gld)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 9c0 4 2.5 6.5 6.5 6.5 1-.6.6-1.8 0-2.2l-1.8-.7-1 1.1c-1.2-.5-2.2-1.5-2.7-2.7l1.1-1-.7-1.8C9.3 7.4 8.1 7 7.5 8"/></svg></a>
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#dca44e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 9c0 4 2.5 6.5 6.5 6.5 1-.6.6-1.8 0-2.2l-1.8-.7-1 1.1c-1.2-.5-2.2-1.5-2.7-2.7l1.1-1-.7-1.8C9.3 7.4 8.1 7 7.5 8"/></svg></a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <linearGradient id="gld" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b8863b"/><stop offset="60%" stop-color="#dca44e"/><stop offset="100%" stop-color="#f3e0a6"/></linearGradient>
 <symbol id="lsMark" viewBox="0 0 100 100"><g fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -187,7 +195,7 @@ footer{background:var(--s0);border-top:3px solid var(--b2);padding:2rem 4rem;dis
 <a href="#" class="nl"><svg class="nl-mark" viewBox="0 0 100 100"><use href="#lsMark"/></svg><div class="nl-company"><div class="nl-name"><span>LIGHT</span><span class="w-sol">Solutions</span><span class="w-sia">SIA</span></div><div class="nl-sub">Logistic Services</div></div></a>
 <ul class="nav-links"><li><a href="#modes">Freight</a></li><li><a href="#services">Services</a></li><li><a href="#routes">Routes</a></li><li><a href="#team">Team</a></li><li><a href="#trust">Certificates</a></li><li><a href="#contact">Contact</a></li></ul>
 <a href="#contact" class="nav-cta">Get a Quote</a>
-<button class="burger" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+<button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
 </nav>
 <section id="hero"><div class="hero-bg"></div><div class="hero-grid"></div>
 <div class="hero-l">
@@ -262,7 +270,7 @@ footer{background:var(--s0);border-top:3px solid var(--b2);padding:2rem 4rem;dis
 <div class="tm-card"><div class="tm-photo"><svg class="ic"><use href="#ic-cust"/></svg></div><div class="tm-role">Design</div><h4 class="tm-name">Name Surname</h4><p class="tm-desc">Shapes how Light Solutions looks and reads — from this site to every quote and document that leaves the office.</p></div>
 </div></section>
 <div style="background:var(--s2);border-top:1px solid var(--d1);border-bottom:1px solid var(--d1);padding:2.4rem 1.5rem"><div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:1.2rem 2rem;flex-wrap:wrap;justify-content:center"><span style="font-weight:700;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--b4)">Typical lanes we run</span><span style="font-size:.84rem;color:var(--t2)">Ningbo → Hamburg · Sea FCL</span><span style="color:var(--d2)">·</span><span style="font-size:.84rem;color:var(--t2)">Yiwu → Warsaw · Rail LCL</span><span style="color:var(--d2)">·</span><span style="font-size:.84rem;color:var(--t2)">Shenzhen → Riga · Air</span><span style="color:var(--d2)">·</span><span style="font-size:.84rem;color:var(--t2)">Guangzhou → Any EU · Road</span></div></div>
-<section style="background:var(--s1);padding:5.5rem 1.5rem;text-align:center;border-bottom:1px solid var(--d1)"><div class="reveal" style="max-width:640px;margin:0 auto"><div class="label" style="justify-content:center">Free Resource</div><h2 class="disp" style="font-size:clamp(1.9rem,3.2vw,2.7rem)">The China → EU<br><em style="color:var(--b4)">Shipping &amp; CBAM Checklist</em></h2><p style="margin:.9rem auto 1.9rem;max-width:480px">Documents, Incoterms, customs and CBAM steps — the exact list our team checks before every shipment leaves China. Get it by email.</p><div style="display:flex;gap:.7rem;max-width:470px;margin:0 auto;flex-wrap:wrap;justify-content:center"><input id="leadEmail" type="email" placeholder="your@email.com" style="flex:1;min-width:200px;background:var(--s3);border:1px solid var(--d1);color:var(--t1);padding:.95rem 1rem;font-family:'DM Sans';font-size:.92rem;outline:none"><button onclick="sendLead()" class="btn-gold" style="border:none;cursor:pointer">Send me the checklist</button></div><div id="leadOk" style="display:none;margin-top:1rem;color:var(--b4);font-size:.9rem">Thank you — check your inbox shortly.</div></div></section>
+<section style="background:var(--s1);padding:5.5rem 1.5rem;text-align:center;border-bottom:1px solid var(--d1)"><div class="reveal" style="max-width:640px;margin:0 auto"><div class="label" style="justify-content:center">Free Resource</div><h2 class="disp" style="font-size:clamp(1.9rem,3.2vw,2.7rem)">The China → EU<br><em style="color:var(--b4)">Shipping &amp; CBAM Checklist</em></h2><p style="margin:.9rem auto 1.9rem;max-width:480px">Documents, Incoterms, customs and CBAM steps — the exact list our team checks before every shipment leaves China. Get it by email.</p><div style="display:flex;gap:.7rem;max-width:470px;margin:0 auto;flex-wrap:wrap;justify-content:center"><input id="leadEmail" type="email" aria-label="Email for checklist" placeholder="your@email.com" style="flex:1;min-width:200px;background:var(--s3);border:1px solid var(--d1);color:var(--t1);padding:.95rem 1rem;font-family:'DM Sans';font-size:.92rem;outline:none"><button onclick="sendLead()" class="btn-gold" style="border:none;cursor:pointer">Send me the checklist</button></div><div id="leadOk" style="display:none;margin-top:1rem;color:var(--b4);font-size:.9rem">Thank you — check your inbox shortly.</div></div></section>
 <section id="contact">
 <div class="reveal-l"><div class="label">Get In Touch</div><h2 class="disp" style="font-size:clamp(2rem,3.5vw,3rem)">Request a<br><em style="color:var(--b4)">Freight Quote</em></h2><p style="margin-top:.6rem">Send us your origin, destination, cargo type and volume. We respond within one business day with routing options and rates.</p>
 <div class="cdet">
@@ -276,7 +284,7 @@ footer{background:var(--s0);border-top:3px solid var(--b2);padding:2rem 4rem;dis
 <div class="form-row"><div class="fg"><label>Name *</label><input type="text" id="fName" placeholder="Your name"></div><div class="fg"><label>Company</label><input type="text" id="fCompany" placeholder="Company name"></div></div>
 <div class="form-row"><div class="fg"><label>Email *</label><input type="email" id="fEmail" placeholder="your@email.com"></div><div class="fg"><label>Phone / WhatsApp</label><input type="tel" id="fPhone" placeholder="+371 ..."></div></div>
 <div class="form-row"><div class="fg"><label>Origin — city or port</label><input type="text" id="fOrigin" placeholder="e.g. China — city or port"></div><div class="fg"><label>Destination</label><input type="text" id="fDest" placeholder="e.g. Riga, Warsaw, Berlin"></div></div>
-<div class="form-row"><div class="fg"><label>Freight Mode</label><select id="fMode"><option value="">Select or let us advise</option><option>Sea FCL</option><option>Sea LCL</option><option>Rail</option><option>Air Freight</option><option>Road EU distribution</option><option>Customs clearance only</option><option>Not sure — advise me</option></select></div><div class="fg"><label>Incoterms</label><select id="fInco"><option value="">Select...</option><option>EXW</option><option>FOB</option><option>CIF</option><option>DAP</option><option>DDP</option><option>Other / Not sure</option></select></div></div>
+<div class="form-row"><div class="fg"><label>Freight Mode</label><select id="fMode" aria-label="Freight Mode"><option value="">Select or let us advise</option><option>Sea FCL</option><option>Sea LCL</option><option>Rail</option><option>Air Freight</option><option>Road EU distribution</option><option>Customs clearance only</option><option>Not sure — advise me</option></select></div><div class="fg"><label>Incoterms</label><select id="fInco" aria-label="Incoterms"><option value="">Select...</option><option>EXW</option><option>FOB</option><option>CIF</option><option>DAP</option><option>DDP</option><option>Other / Not sure</option></select></div></div>
 <div class="fg"><label>Cargo — type, CBM or kg, containers / pallets</label><textarea id="fMsg" rows="3" placeholder="e.g. LED lighting, 8 CBM / 450 kg, LCL, delivery to Warsaw by end of month"></textarea></div>
 <button class="btn-submit" onclick="submitForm()">Send Request →</button>
 <p style="text-align:center;font-size:.72rem;color:var(--t3);margin-top:.85rem">No commitment · Reply within one business day · We answer in EN &amp; RU</p>
@@ -289,7 +297,7 @@ const W3KEY="YOUR-WEB3FORMS-KEY";
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.08});
 document.querySelectorAll('.reveal,.reveal-l,.reveal-r,.reveal-scale').forEach(el=>obs.observe(el));
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('nav-open')));
-window.addEventListener('scroll',()=>{document.getElementById('mainNav').style.padding=window.scrollY>50?'.7rem 4rem':'1.1rem 4rem'});
+window.addEventListener('scroll',()=>{const n=document.getElementById('mainNav'),v=window.scrollY>50?'0.7rem':'1.1rem';n.style.paddingTop=v;n.style.paddingBottom=v});
 function val(id){const el=document.getElementById(id);return el?el.value:''}
 function showSuccess(){const w=document.getElementById('qfWrap');w.querySelectorAll('input,select,textarea,button,.qf-h,.qf-s,.form-row,.fg,p').forEach(el=>{el.style.transition='opacity .4s';el.style.opacity='0';setTimeout(()=>el.style.display='none',400)});setTimeout(()=>{document.getElementById('fSuccess').style.display='block'},420)}
 async function submitForm(){const n=document.getElementById('fName'),e=document.getElementById('fEmail');let ok=true;[n,e].forEach(el=>{el.style.borderColor='';if(!el.value.trim()){el.style.borderColor='#ef4444';ok=false}});if(!ok){n.closest('.qf').scrollIntoView({behavior:'smooth',block:'center'});return}const data={access_key:W3KEY,subject:"New freight quote — lightsolutions.lv",botcheck:false,name:n.value,company:val('fCompany'),email:e.value,phone:val('fPhone'),origin:val('fOrigin'),destination:val('fDest'),mode:val('fMode'),incoterms:val('fInco'),cargo:val('fMsg')};showSuccess();try{await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})}catch(err){}}
